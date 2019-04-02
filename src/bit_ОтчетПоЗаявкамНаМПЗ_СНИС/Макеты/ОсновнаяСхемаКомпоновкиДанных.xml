@@ -22,6 +22,7 @@
 						<value xsi:type="xs:decimal">13</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаВыполнения</dataPath>
@@ -37,6 +38,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -80,6 +82,7 @@
 						<value xsi:type="xs:decimal">25</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
@@ -98,6 +101,7 @@
 						<value xsi:type="xs:decimal">35</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>КлючСтрокиЗаявкиНаМПЗ</dataPath>
@@ -111,6 +115,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ФизическоеЛицо</dataPath>
@@ -126,6 +131,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -137,6 +143,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НоменклатурнаяГруппа</dataPath>
@@ -153,6 +160,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_1</dataPath>
@@ -163,6 +171,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДоговорКонтрагента</dataPath>
@@ -173,6 +182,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_2</dataPath>
@@ -183,6 +193,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_3</dataPath>
@@ -193,6 +204,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_4</dataPath>
@@ -203,6 +215,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ОплатаНоменкл</dataPath>
@@ -227,7 +240,18 @@
 						<parameter>МаксимальнаяШирина</parameter>
 						<value xsi:type="xs:decimal">15</value>
 					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<use>false</use>
+						<parameter>Текст</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ываыва</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Заказано</dataPath>
@@ -247,6 +271,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Выполнено</dataPath>
@@ -266,6 +291,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Подразделение</dataPath>
@@ -282,6 +308,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаЗаказаПоставщику</dataPath>
@@ -298,6 +325,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>МенеджерПоЗакупкам</dataPath>
@@ -319,6 +347,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СкладИзЗаявки</dataPath>
@@ -335,6 +364,7 @@
 						<value xsi:type="xs:decimal">25</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Контрагент</dataPath>
@@ -350,6 +380,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаПоступленияПлан</dataPath>
@@ -366,6 +397,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СтрокаВсего</dataPath>
@@ -391,6 +423,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаОплатыОборот</dataPath>
@@ -401,6 +434,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ЗаказПоставщику</dataPath>
@@ -411,6 +445,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Валюта</dataPath>
@@ -421,6 +456,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаОплаты</dataPath>
@@ -436,6 +472,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
@@ -557,13 +594,17 @@
 	бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента КАК СуммаЗаказаПоставщику,
 	бит_стр_РасчетыПоЗаказамПоставщикамОбороты.СуммаОплатыОборот КАК СуммаОплатыОборот,
 	ВЫБОР
-		КОГДА бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента * бит_стр_РасчетыПоЗаказамПоставщикамОбороты.СуммаОплатыОборот ЕСТЬ NULL
-			ТОГДА 0
+		КОГДА бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента = 0
+			ТОГДА "---"
 		ИНАЧЕ ВЫБОР
-				КОГДА НЕ бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаВключаетНДС
-					ТОГДА бит_стр_ЗаказПоставщикуТовары.Цена * бит_стр_ЗаказПоставщикуТовары.Количество + бит_стр_ЗаказПоставщикуТовары.СуммаНДС
-				ИНАЧЕ бит_стр_ЗаказПоставщикуТовары.Цена * бит_стр_ЗаказПоставщикуТовары.Количество
-			КОНЕЦ / бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента * бит_стр_РасчетыПоЗаказамПоставщикамОбороты.СуммаОплатыОборот
+				КОГДА бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента * бит_стр_РасчетыПоЗаказамПоставщикамОбороты.СуммаОплатыОборот ЕСТЬ NULL
+					ТОГДА 0
+				ИНАЧЕ ВЫБОР
+						КОГДА НЕ бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаВключаетНДС
+							ТОГДА бит_стр_ЗаказПоставщикуТовары.Цена * бит_стр_ЗаказПоставщикуТовары.Количество + бит_стр_ЗаказПоставщикуТовары.СуммаНДС
+						ИНАЧЕ бит_стр_ЗаказПоставщикуТовары.Цена * бит_стр_ЗаказПоставщикуТовары.Количество
+					КОНЕЦ / бит_стр_ЗаказПоставщикуТовары.Ссылка.СуммаДокумента * бит_стр_РасчетыПоЗаказамПоставщикамОбороты.СуммаОплатыОборот
+			КОНЕЦ
 	КОНЕЦ КАК ОплатаНоменкл
 ИЗ
 	_ВТ3 КАК _ВТ3
@@ -1544,6 +1585,7 @@
 					<AllowedSign>Any</AllowedSign>
 				</NumberQualifiers>
 			</valueType>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ВРезервеНаДругихСкладах</dataPath>
@@ -1565,6 +1607,7 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>Обеспечено</dataPath>
@@ -1582,6 +1625,7 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ПолнаяОтработка</dataPath>
@@ -1603,6 +1647,7 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>СкладскиеОстаткиДМТСИФизЛицо</dataPath>
@@ -1619,6 +1664,7 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ТоварныйКредит</dataPath>
@@ -1645,6 +1691,7 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>ВЗаказахПоставщику</dataPath>
@@ -1711,10 +1758,6 @@
 			<expression>Сумма(СуммаОплатыОборот)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>ОплатаНоменкл</dataPath>
-			<expression>Сумма(ОплатаНоменкл)</expression>
-		</totalField>
-		<totalField>
 			<dataPath>СуммаЗаказаПоставщику</dataPath>
 			<expression>Сумма(СуммаЗаказаПоставщику)</expression>
 		</totalField>
@@ -1734,6 +1777,10 @@
 			<dataPath>ТоварныйКредит</dataPath>
 			<expression>Сумма(ТоварныйКредит)</expression>
 		</totalField>
+		<totalField>
+			<dataPath>ОплатаНоменкл</dataPath>
+			<expression>Сумма(ОплатаНоменкл)</expression>
+		</totalField>
 		<parameter>
 			<name>НачалоПериода</name>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
@@ -1751,6 +1798,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>КонецПериода</name>
@@ -1769,6 +1817,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ИспМенеджеров</name>
@@ -1783,6 +1832,7 @@
 			</valueType>
 			<value xsi:type="xs:boolean">false</value>
 			<useRestriction>true</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>УчетМенеджПоПодразделениям</name>
@@ -1797,6 +1847,7 @@
 			</valueType>
 			<value xsi:type="xs:boolean">false</value>
 			<useRestriction>true</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>Период</name>
@@ -1814,6 +1865,7 @@
 			</valueType>
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ПериодОтчета</name>
@@ -1832,6 +1884,7 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ВидПолученияОтгрузки</name>
@@ -1846,6 +1899,7 @@
 			</valueType>
 			<value xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xsi:type="dcscor:DesignTimeValue">Перечисление.бит_стр_ВидПолученияОтгрузки.КПолучению</value>
 			<useRestriction>true</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>НачалоПериодаДатаВыполнения</name>
@@ -1864,6 +1918,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчетаДатаВыполнения.ДатаНачала</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>КонецПериодаДатаВыполнения</name>
@@ -1882,6 +1937,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчетаДатаВыполнения.ДатаОкончания</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ПериодОтчетаДатаВыполнения</name>
@@ -1900,6 +1956,7 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>НачалоПериодаВходящаяДата</name>
@@ -1918,6 +1975,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчетаВходящаяДата.ДатаНачала</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>КонецПериодаВходящаяДата</name>
@@ -1936,6 +1994,7 @@
 			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 			<useRestriction>true</useRestriction>
 			<expression>&amp;ПериодОтчетаВходящаяДата.ДатаОкончания</expression>
+			<inputParameters/>
 		</parameter>
 		<parameter>
 			<name>ПериодОтчетаВходящаяДата</name>
@@ -1954,6 +2013,7 @@
 				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
 			</value>
 			<useRestriction>false</useRestriction>
+			<inputParameters/>
 		</parameter>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
