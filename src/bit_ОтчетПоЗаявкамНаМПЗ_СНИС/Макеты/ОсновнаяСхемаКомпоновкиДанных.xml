@@ -22,6 +22,7 @@
 						<value xsi:type="xs:decimal">13</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаВыполнения</dataPath>
@@ -37,6 +38,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -80,6 +82,7 @@
 						<value xsi:type="xs:decimal">25</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
@@ -98,6 +101,7 @@
 						<value xsi:type="xs:decimal">35</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>КлючСтрокиЗаявкиНаМПЗ</dataPath>
@@ -111,6 +115,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ФизическоеЛицо</dataPath>
@@ -126,6 +131,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -137,6 +143,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НоменклатурнаяГруппа</dataPath>
@@ -153,6 +160,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_1</dataPath>
@@ -163,6 +171,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДоговорКонтрагента</dataPath>
@@ -173,6 +182,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_2</dataPath>
@@ -183,6 +193,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_3</dataPath>
@@ -193,6 +204,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_4</dataPath>
@@ -203,6 +215,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ОплатаНоменкл</dataPath>
@@ -238,6 +251,7 @@
 						</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Заказано</dataPath>
@@ -257,6 +271,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Выполнено</dataPath>
@@ -276,6 +291,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Подразделение</dataPath>
@@ -292,6 +308,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СуммаЗаказаПоставщику</dataPath>
@@ -2060,6 +2077,13 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">МенеджерПоЗакупкам</left>
 			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ЗаявкаНаМПЗ</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="dcscor:DesignTimeValue"/>
+			<userSettingID>118467e4-321f-4a2c-b88b-627ea3ac6e09</userSettingID>
 		</item>
 		<viewMode>Normal</viewMode>
 		<userSettingID>3860ae53-ee3d-4e9c-8dbe-12c29e57b67c</userSettingID>
