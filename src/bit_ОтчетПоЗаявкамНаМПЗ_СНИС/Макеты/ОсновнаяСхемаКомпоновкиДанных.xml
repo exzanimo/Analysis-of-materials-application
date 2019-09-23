@@ -22,7 +22,6 @@
 						<value xsi:type="xs:decimal">13</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаВыполнения</dataPath>
@@ -38,7 +37,6 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -82,7 +80,6 @@
 						<value xsi:type="xs:decimal">25</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
@@ -101,7 +98,6 @@
 						<value xsi:type="xs:decimal">35</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>КлючСтрокиЗаявкиНаМПЗ</dataPath>
@@ -115,7 +111,6 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ФизическоеЛицо</dataPath>
@@ -131,7 +126,6 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -1012,7 +1006,6 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -1021,7 +1014,6 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СерияНоменклатуры</dataPath>
@@ -1030,7 +1022,6 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Склад</dataPath>
@@ -1039,13 +1030,11 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>КоличествоОстаток</dataPath>
 				<field>КоличествоОстаток</field>
 				<appearance/>
-				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
@@ -1520,7 +1509,6 @@
 					<AllowedSign>Any</AllowedSign>
 				</NumberQualifiers>
 			</valueType>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ВРезервеНаДругихСкладах</dataPath>
@@ -1542,7 +1530,6 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>Обеспечено</dataPath>
@@ -1560,7 +1547,6 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ПолнаяОтработка</dataPath>
@@ -1582,7 +1568,6 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>СкладскиеОстаткиДМТСИФизЛицо</dataPath>
@@ -1599,7 +1584,6 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ТоварныйКредит</dataPath>
@@ -1626,7 +1610,6 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
-			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>ВЗаказахПоставщику</dataPath>
