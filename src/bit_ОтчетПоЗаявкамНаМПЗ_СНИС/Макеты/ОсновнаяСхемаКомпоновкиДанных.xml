@@ -143,7 +143,6 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>НоменклатурнаяГруппа</dataPath>
@@ -160,7 +159,6 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_1</dataPath>
@@ -171,7 +169,6 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДоговорКонтрагента</dataPath>
@@ -182,7 +179,6 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
-				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Аналитика_2</dataPath>
@@ -1010,28 +1006,13 @@
 		<dataSet xsi:type="DataSetQuery">
 			<name>bit_ОстаткиДМТС</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Остаток</dataPath>
-				<field>Остаток</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Остаток</d5p1:content>
-					</d5p1:item>
-				</title>
-				<appearance/>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
 				<field>Номенклатура</field>
 				<role>
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ЗаявкаНаМПЗ</dataPath>
-				<field>ЗаявкаНаМПЗ</field>
-				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -1040,6 +1021,7 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СерияНоменклатуры</dataPath>
@@ -1048,27 +1030,22 @@
 					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
 				</role>
 				<appearance/>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>КлючСтрокиЗаявкиНаМПЗ</dataPath>
-				<field>КлючСтрокиЗаявкиНаМПЗ</field>
-				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Склад</dataPath>
 				<field>Склад</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>СвободныйОстаток</dataPath>
-				<field>СвободныйОстаток</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Складские остатки ДМТС</d5p1:content>
-					</d5p1:item>
-				</title>
+				<dataPath>КоличествоОстаток</dataPath>
+				<field>КоличествоОстаток</field>
 				<appearance/>
+				<inputParameters/>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
@@ -1089,37 +1066,12 @@
 	ВТ_ОстаткиНаВсехСкладах.СерияНоменклатуры КАК СерияНоменклатуры,
 	ВТ_ОстаткиНаВсехСкладах.Склад КАК Склад,
 	ВТ_ОстаткиНаВсехСкладах.КоличествоОстаток КАК КоличествоОстаток
-ПОМЕСТИТЬ ВТ_ОстаткиВГруппеСкладовДМТС
 ИЗ
 	Справочник.бит_стр_ГруппыСкладов.СоставГруппы КАК бит_стр_ГруппыСкладовТЧ
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОстаткиНаВсехСкладах КАК ВТ_ОстаткиНаВсехСкладах
 		ПО бит_стр_ГруппыСкладовТЧ.Склад = ВТ_ОстаткиНаВсехСкладах.Склад
 ГДЕ
-	бит_стр_ГруппыСкладовТЧ.Ссылка.Код = "000000004"
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ВТ_ОстаткиВГруппеСкладовДМТС.Номенклатура КАК Номенклатура,
-	ВТ_ОстаткиВГруппеСкладовДМТС.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
-	ВТ_ОстаткиВГруппеСкладовДМТС.СерияНоменклатуры КАК СерияНоменклатуры,
-	СУММА(ВТ_ОстаткиВГруппеСкладовДМТС.КоличествоОстаток) КАК Остаток,
-	СУММА(ВТ_ОстаткиВГруппеСкладовДМТС.КоличествоОстаток - ЕСТЬNULL(бит_стр_ТоварыВРезервеНаСкладахОстатки.КоличествоОстаток, 0)) КАК СвободныйОстаток
-ИЗ
-	ВТ_ОстаткиВГруппеСкладовДМТС КАК ВТ_ОстаткиВГруппеСкладовДМТС
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.бит_стр_ТоварыВРезервеНаСкладах.Остатки КАК бит_стр_ТоварыВРезервеНаСкладахОстатки
-		ПО ВТ_ОстаткиВГруппеСкладовДМТС.Номенклатура = бит_стр_ТоварыВРезервеНаСкладахОстатки.Номенклатура
-			И ВТ_ОстаткиВГруппеСкладовДМТС.ХарактеристикаНоменклатуры = бит_стр_ТоварыВРезервеНаСкладахОстатки.ХарактеристикаНоменклатуры
-			И ВТ_ОстаткиВГруппеСкладовДМТС.СерияНоменклатуры = бит_стр_ТоварыВРезервеНаСкладахОстатки.СерияНоменклатуры
-			И ВТ_ОстаткиВГруппеСкладовДМТС.Склад = бит_стр_ТоварыВРезервеНаСкладахОстатки.Склад
-
-СГРУППИРОВАТЬ ПО
-	ВТ_ОстаткиВГруппеСкладовДМТС.Номенклатура,
-	ВТ_ОстаткиВГруппеСкладовДМТС.ХарактеристикаНоменклатуры,
-	ВТ_ОстаткиВГруппеСкладовДМТС.СерияНоменклатуры
-
-УПОРЯДОЧИТЬ ПО
-	Номенклатура</query>
+	бит_стр_ГруппыСкладовТЧ.Ссылка.Код = "000000004"</query>
 		</dataSet>
 		<dataSet xsi:type="DataSetQuery">
 			<name>bit_ОстаткиФизЛицо</name>
@@ -1568,6 +1520,7 @@
 					<AllowedSign>Any</AllowedSign>
 				</NumberQualifiers>
 			</valueType>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ВРезервеНаДругихСкладах</dataPath>
@@ -1589,6 +1542,7 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>Обеспечено</dataPath>
@@ -1606,6 +1560,7 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ПолнаяОтработка</dataPath>
@@ -1627,10 +1582,11 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>СкладскиеОстаткиДМТСИФизЛицо</dataPath>
-			<expression>ЕстьNull(СвободныйОстаток, 0) + ЕстьNull(ОстатокФизЛицо, 0)</expression>
+			<expression>ЕстьNull(КоличествоОстаток, 0) + ЕстьNull(ОстатокФизЛицо, 0)</expression>
 			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
 				<d4p1:item>
 					<d4p1:lang>ru</d4p1:lang>
@@ -1643,6 +1599,7 @@
 					<value xsi:type="xs:decimal">10</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<calculatedField>
 			<dataPath>ТоварныйКредит</dataPath>
@@ -1669,6 +1626,7 @@
 					<value xsi:type="xs:decimal">15</value>
 				</item>
 			</appearance>
+			<inputParameters/>
 		</calculatedField>
 		<totalField>
 			<dataPath>ВЗаказахПоставщику</dataPath>
@@ -1705,10 +1663,6 @@
 		<totalField>
 			<dataPath>Обеспечено</dataPath>
 			<expression>Сумма(Обеспечено)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>СвободныйОстаток</dataPath>
-			<expression>Сумма(СвободныйОстаток)</expression>
 		</totalField>
 		<totalField>
 			<dataPath>ПолнаяОтработка</dataPath>
