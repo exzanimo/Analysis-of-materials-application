@@ -22,6 +22,7 @@
 						<value xsi:type="xs:decimal">13</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаВыполнения</dataPath>
@@ -37,6 +38,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ХарактеристикаНоменклатуры</dataPath>
@@ -80,6 +82,7 @@
 						<value xsi:type="xs:decimal">25</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
@@ -98,6 +101,7 @@
 						<value xsi:type="xs:decimal">35</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>КлючСтрокиЗаявкиНаМПЗ</dataPath>
@@ -111,6 +115,7 @@
 						<value xsi:type="xs:decimal">10</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>ФизическоеЛицо</dataPath>
@@ -126,6 +131,7 @@
 						<value xsi:type="xs:decimal">15</value>
 					</item>
 				</appearance>
+				<inputParameters/>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Комментарий</dataPath>
@@ -2265,6 +2271,13 @@
 					</item>
 					<item xsi:type="GroupItemField">
 						<field>ДатаПоступленияПлан</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>Комментарий</field>
 						<groupType>Items</groupType>
 						<periodAdditionType>None</periodAdditionType>
 						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
